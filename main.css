@@ -1,15 +1,19 @@
 /* Cheesecake */
 /* Common elements */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 body {
     font-size: 67.5%;
     font-family: 'Arima', cursive, sans-serif;
     background: #FCF0CC;
     padding: 0;
     margin: 0;
-    /* -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -o-background-size: 100% 100%; */
 }
 h1 {
     color: #A64253;
@@ -61,7 +65,7 @@ header h1 {
     text-align: center;
     margin: 0;
     text-shadow: 8px 9px 5px #A64253; /*offset-x | offset-y | blur-radius | color  */
-}
+} 
 header h2 {
     font-weight: 300;
     font-size: 3.8em;
@@ -84,7 +88,6 @@ nav {
 nav ul {
     margin: 0;
     padding: 0;
-    /* list-style: none; */
 }
 nav li {
     display: inline-block;
@@ -101,41 +104,26 @@ nav ul li a:hover {
 }
 nav#login {
     float: right;
-    margin: -1.5em 0 0 0;
+    height: 1.6em;
+    margin: -1.5em 0 0 0; 
     padding: 0.35em;
     background-color: #A64253;
-    height: 1.3em;
+    position: relative;
+    z-index: 10;
 }
 nav#login li {
     padding: 0 0.25em 0 0.2em;
     vertical-align: middle;
 }
-/* nav#login ul li.acctNav a, nav#login ul li.acctNav a:visited {
-    color: #fff;
-    text-decoration: none;
+nav#login ul li.acctNav a, nav#login ul li.acctNav a:visited {
     display: inline-block;
     height: 1.3em;
     padding: 0.5em;
     margin: -0.4em 0 0 0;
-    font-size: 0.8em;
-} */
+}
 nav#login ul li.acctNav a.active {
     background-color: #D56AA0;
 }
-/* nav#login ul li.acctNav a:hover {
-    background-color: rgba(252, 251, 243, 0.7);
-    color: #c64322;
-} */
-nav#login li a, nav#login li a:visited {
-    padding: 0;
-}
-/* nav#login li a:hover {
-    background-color: transparent;
-} */
-/* nav#login ul li.acctNav a.cart::before {
-    content: "| ";
-    color: #fcfbe6;
-} */
 /* Sidebar Section Nav */
 section#leftSidebar {
     width: 15%;
@@ -157,7 +145,7 @@ input[type=search] {
     box-sizing: border-box;
     border: 1px solid #A64253;
     background-color: #FCF0CC;
-    color: white;
+    color: #A64253;
 }
 ul#otherPages, ul#otherPages a:visited{
     font-size: 2.0em;
@@ -202,7 +190,6 @@ section div.panel {
     margin: 0 0.5em 2.0em 0.5em;
     padding: 1.0em;
     background-color: #FCF0CC;
-    /* border: #ccc solid 1px; */
     border-radius: 0.6em;
 }
 section div.panel img.cheesecakeType {
